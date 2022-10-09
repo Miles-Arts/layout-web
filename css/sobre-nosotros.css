@@ -14,11 +14,13 @@
 }
 
 .sobre_nosotros__texto {
+    width:auto;
     line-height: normal;
     margin-bottom: 1rem;
 }
 
 .sobre_nosotros__plataformas {
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -31,11 +33,20 @@
 }
 
 .sobre_nosotros__imagen {
+    height: 400px;
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
     .sobre_nosotros__imagen {
         display: block;
+    }
+    .sobre_nosotros {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .sobre_nosotros__titulo {
+        text-align: left;
     }
 }
